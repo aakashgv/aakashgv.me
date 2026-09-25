@@ -11,4 +11,4 @@ Personal site of Aakash Vachhani. Plain HTML/CSS/JS - no build step.
 Open `index.html` in a browser, or `python3 -m http.server`.
 
 ## Deploy
-Hosted on Vercel, auto-deploys from the main branch of this repo.
+Set up to host free on Vercel: import this repo at vercel.com/new and it deploys as-is, then auto-deploys every push to main.
