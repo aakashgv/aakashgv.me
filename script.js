@@ -9,4 +9,6 @@
     root.classList.toggle('dark');
     try { localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); } catch (e) {}
   });
+  var el = document.getElementById('years-kicking');
+  if (el) { el.textContent = String(Math.max(1, new Date().getFullYear() - 2021)); }
 })();

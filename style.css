@@ -120,3 +120,21 @@ p { margin: 0 0 .75rem; font-size: .95rem; }
 .dock .sep { width: 1px; height: 24px; background: var(--border); margin: 0 .25rem; }
 html:not(.dark) .icon-moon { display: none; }
 html.dark .icon-sun { display: none; }
+
+.badge {
+  display: inline-block;
+  background: var(--chip-bg);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: .2rem .8rem;
+  font-size: .8rem;
+  color: var(--muted);
+}
+.timeline .name { display: flex; align-items: center; gap: .6rem; }
+.timeline .logo {
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  object-fit: contain;
+  background: #fff;
+}
