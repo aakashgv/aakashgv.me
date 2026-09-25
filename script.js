@@ -10,5 +10,12 @@
     try { localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); } catch (e) {}
   });
   var el = document.getElementById('years-kicking');
-  if (el) { el.textContent = String(Math.max(1, new Date().getFullYear() - 2021)); }
+  if (el) {
+    var birth = new Date(1999, 8, 28).getTime(); // 28-09-1999
+    var yearMs = 365.2425 * 24 * 60 * 60 * 1000;
+    (function tick() {
+      el.textContent = ((Date.now() - birth) / yearMs).toFixed(8);
+      setTimeout(tick, 80);
+    })();
+  }
 })();
